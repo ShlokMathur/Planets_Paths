@@ -7,9 +7,10 @@ from datetime import datetime
 import plotly.graph_objects as go
 
 # Load data
-planet_info = pd.read_csv(r'C:\Users\Shlok Mathur\Desktop\Planets\modified_planets.csv')
-coordinates = pd.read_csv(r'C:\Users\Shlok Mathur\Desktop\Planets\planetary_coordinates_2025_01_16.csv')
-
+# planet_info = pd.read_csv(r'C:\Users\Shlok Mathur\Desktop\Planets\modified_planets.csv')
+# coordinates = pd.read_csv(r'C:\Users\Shlok Mathur\Desktop\Planets\planetary_coordinates_2025_01_16.csv')
+planet_info = pd.read_csv('modified_planets.csv')
+coordinates = pd.read_csv('planetary_coordinates_2025_01_16.csv')
 # Functions
 def calculate_angle(revolution_days, velocity, perimeter, time_difference):
     distance_travelled = velocity * time_difference
